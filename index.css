@@ -1,0 +1,118 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.pressionado{
+    animation: pressionado 0.1s linear;
+}
+
+@keyframes pressionado {
+    0% {
+        transform: scale(1)
+    }
+    25%{
+        transform: scale(0.7)
+    }
+    50%{
+        transform: scale(0.8)
+    }
+    75%{
+        transform: scale(0.9)
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+
+
+.tecla {
+    height: 3.5em;
+    width: 3.5em;
+    margin-left: 0.7rem;
+    background-color: aqua;
+    color: black;
+    border-radius: 0.4em;
+    line-height: 3em;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    text-align: center;
+    font-size: 2vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teclado {
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    row-gap: 0.4rem;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.linha {
+    display: flex;
+}
+
+.x1 {
+    grid-row: 1;
+}
+
+.x2 {
+    grid-row: 2;
+}
+
+.x3 {
+    grid-row: 3;
+}
+
+.x4 {
+    grid-row: 4;
+}
+
+.x5 {
+    grid-row: 5;
+}
+
+.backspace {
+    width: 7em;
+}
+
+.tab {
+    width: 6em;
+}
+
+.barra {
+    width: 4.5em;
+}
+
+.caps {
+    width: 7.5em;
+}
+
+.enter {
+    width: 8.2rem;
+}
+
+.shift {
+    width: 10.9rem;
+}
+
+.alt {
+    width: 5rem;
+}
+
+.ctrl {
+    width: 5.45rem;
+}
+
+.space {
+    width: 29.7rem;
+}
