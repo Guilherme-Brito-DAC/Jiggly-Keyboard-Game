@@ -1,41 +1,26 @@
 :root {
     --main: white;
-    --borderRadius: 0rem;
+    --borderRadius: 1rem;
 }
 
 body {
-    background-color: black;
+    background-color: #3baaff;
     color: white;
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
-.config {
-    display: flex;
-    justify-content: end;
-    width: 100%;
-}
-
-.config button {
-    margin-top: 1rem;
-    margin-right: 1rem;
-    border: none;
-    outline: none;
-    background: none;
-    color: white;
-    cursor: pointer;
-}
-
 .pressionado {
-    transform: scale(0.95);
+    transform: scale(0.9);
+    filter: brightness(90%);
 }
 
 .random {
-    background: none !important;
     color: var(--main) !important;
-    border: 1px solid var(--main);
+    background: none !important;
+    background-size: 200%;
+    border: 2px solid var(--main) !important;
     box-sizing: border-box;
-    animation: tremedeira 0.6s;
-    animation-iteration-count: infinite;
+    animation: tremedeira 0.6s infinite;
 }
 
 @keyframes tremedeira {
@@ -84,34 +69,47 @@ body {
     }
 }
 
+.progress {
+    width: 65.58px;
+    background-color: #ff5ac4;
+    position: absolute;
+    height: 0.2rem;
+    margin-left: 0.7rem;
+    margin-top: 0.15rem;
+    border-radius: 5rem;
+}
+
 .tecla {
     height: 3.5em;
     width: 3.5em;
     margin-left: 0.7rem;
     background-color: var(--main);
-    color: black;
+    color: rgb(58, 58, 58);
     line-height: 3em;
     letter-spacing: 1px;
-    transition: 0.1s;
+    transition: 0.3s;
     text-align: center;
     font-size: 2vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: var(--borderRadius)
+    border-radius: var(--borderRadius);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 }
 
 .teclado {
     display: grid;
     grid-template-rows: 20% 20% 20% 20% 20%;
     row-gap: 0.4rem;
-    justify-content: center;
 }
 
-h2,
-h4 {
-    text-align: center;
+.center {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
 .linha {

@@ -10,7 +10,6 @@ const Teclas = [
     "56",
     "57",
     "48",
-    "61",
     "81",
     "87",
     "69",
@@ -22,7 +21,6 @@ const Teclas = [
     "79",
     "80",
     "220",
-    "9",
     "65",
     "83",
     "68",
@@ -34,7 +32,6 @@ const Teclas = [
     "76",
     "20",
     "13",
-    "59",
     "16",
     "90",
     "88",
@@ -42,21 +39,15 @@ const Teclas = [
     "86",
     "66",
     "78",
-    "108",
     "190",
     "191",
     "32",
-    "93",
     "17"
 ]
 const PontuacaoDiv = document.getElementById("pontuacao")
-const MultiplicadorDiv = document.getElementById("multiplicador")
-const TimerDiv = document.getElementById("timer")
 
-let Pontuacao = 0
-let Multiplicador = 1
 let TeclaAleatoria
-let TimeOuts = []
+let t = 2000
 
 /* #endregion */
 
@@ -84,45 +75,19 @@ function teclaDespressionada(e) {
 }
 
 function teclaAleatoria() {
-
-    for (var i = 0; i < TimeOuts.length; i++) {
-        clearTimeout(TimeOuts[i])
-    }
-
     if (TeclaAleatoria != null) document.getElementById(TeclaAleatoria).classList.remove("random")
 
     var x = Teclas[Math.floor(Math.random() * Teclas.length)]
+
     TeclaAleatoria = x
 
     document.getElementById(x).classList.add("random")
-
-    TimeOuts.push(setTimeout(teclaErrada, 2000))
 }
 
 function teclaCerta() {
-    Pontuacao = Pontuacao + (1 * Multiplicador)
-
-    PontuacaoDiv.innerHTML = `Pontuação : ${Pontuacao}`
-
-    Multiplicador++
-
-    MultiplicadorDiv.innerHTML = Multiplicador + "x"
-
     teclaAleatoria()
 }
 
 function teclaErrada() {
-    Pontuacao = 0
-
-    PontuacaoDiv.innerHTML = `Pontuação : ${Pontuacao}`
-
-    Multiplicador = 1
-
-    MultiplicadorDiv.innerHTML = Multiplicador + "x"
-
     teclaAleatoria()
-}
-
-function tempoRestante(timeout) {
-    return Math.ceil((timeout._idleStart + timeout._idleTimeout - Date.now()) / 1000);
 }

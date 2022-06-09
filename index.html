@@ -16,95 +16,88 @@
 
 <body>
 
-    <div class="config">
-        <button type="button"><span class="material-symbols-outlined">settings</span></button>
+    <div class="center">
+        <div class="teclado" id="teclado">
+
+            <div class="linha x1">
+                <div class="tecla" id="222">`</div>
+                <div class="tecla" id="49">1</div>
+                <div class="tecla" id="50">2</div>
+                <div class="tecla" id="51">3</div>
+                <div class="tecla" id="52">4</div>
+                <div class="tecla disabled" id="53">5</div>
+                <div class="tecla" id="54">6</div>
+                <div class="tecla" id="55">7</div>
+                <div class="tecla" id="56">8</div>
+                <div class="tecla" id="57">9</div>
+                <div class="tecla" id="48">0</div>
+                <div class="tecla" id="109">-</div>
+                <div class="tecla" id="61">=</div>
+                <div class="tecla backspace" id="8"><span class="material-symbols-outlined">keyboard_backspace</span>
+                </div>
+            </div>
+
+            <div class="linha x2">
+                <div class="tecla tab" id="9">TAB</div>
+                <div class="tecla" id="81">Q</div>
+                <div class="tecla" id="87">W</div>
+                <div class="tecla" id="69">E</div>
+                <div class="tecla" id="82">R</div>
+                <div class="tecla" id="84">T</div>
+                <div class="tecla" id="89">Y</div>
+                <div class="tecla" id="85">U</div>
+                <div class="tecla" id="73">I</div>
+                <div class="tecla" id="79">O</div>
+                <div class="tecla" id="80">P</div>
+                <div class="tecla" id="160">[</div>
+                <div class="tecla" id="221">]</div>
+                <div class="tecla barra" id="220">\</div>
+            </div>
+
+            <div class="linha x3">
+                <div class="tecla caps" id="20">CAPS</div>
+                <div class="tecla" id="65">A</div>
+                <div class="tecla" id="83">S</div>
+                <div class="tecla" id="68">D</div>
+                <div class="tecla" id="70">F</div>
+                <div class="tecla" id="71">G</div>
+                <div class="tecla" id="72">H</div>
+                <div class="tecla" id="74">J</div>
+                <div class="tecla" id="75">K</div>
+                <div class="tecla" id="76">L</div>
+                <div class="tecla" id="59">;:</div>
+                <div class="tecla" id="222">'"</div>
+                <div class="tecla enter" id="13">ENTER</div>
+            </div>
+
+            <div class="linha x4">
+                <div class="tecla shift" id="16">SHIFT</div>
+                <div class="tecla" id="90">Z</div>
+                <div class="tecla" id="88">X</div>
+                <div class="tecla" id="67">C</div>
+                <div class="tecla" id="86">V</div>
+                <div class="tecla" id="66">B</div>
+                <div class="tecla" id="78">N</div>
+                <div class="tecla" id="77">M</div>
+                <div class="tecla" id="108">,</div>
+                <div class="tecla" id="190">.</div>
+                <div class="tecla" id="191">/?</div>
+                <div class="tecla shift" id="16">SHIFT</div>
+            </div>
+
+            <div class="linha x5">
+                <div class="tecla ctrl" id="17">CTRL</div>
+                <div class="tecla alt" id="91"><img src="https://img.icons8.com/ios-filled/27/windows-10.png" /></div>
+                <div class="tecla alt" id="18">ALT</div>
+                <div class="tecla space" id="32">SPACE</div>
+                <div class="tecla alt" id="18">ALT</div>
+                <div class="tecla alt" id="">FN</div>
+                <div class="tecla alt" id="93"><span class="material-symbols-outlined"> reorder</span></div>
+                <div class="tecla ctrl" id="17">CTRL</div>
+            </div>
+
+        </div>
     </div>
-
-    <h2 id="pontuacao">Pontuação : 0</h2>
-    <h4 id="multiplicador">1x</h4>
-
-    <div class="teclado" id="teclado">
-
-        <div class="linha x1">
-            <div class="tecla" id="222">`</div>
-            <div class="tecla" id="49">1</div>
-            <div class="tecla" id="50">2</div>
-            <div class="tecla" id="51">3</div>
-            <div class="tecla" id="52">4</div>
-            <div class="tecla" id="53">5</div>
-            <div class="tecla" id="54">6</div>
-            <div class="tecla" id="55">7</div>
-            <div class="tecla" id="56">8</div>
-            <div class="tecla" id="57">9</div>
-            <div class="tecla" id="48">0</div>
-            <div class="tecla" id="109">-</div>
-            <div class="tecla" id="61">=</div>
-            <div class="tecla backspace" id="8"><span class="material-symbols-outlined">keyboard_backspace</span></div>
-        </div>
-
-        <div class="linha x2">
-            <div class="tecla tab" id="9">TAB</div>
-            <div class="tecla" id="81">Q</div>
-            <div class="tecla" id="87">W</div>
-            <div class="tecla" id="69">E</div>
-            <div class="tecla" id="82">R</div>
-            <div class="tecla" id="84">T</div>
-            <div class="tecla" id="89">Y</div>
-            <div class="tecla" id="85">U</div>
-            <div class="tecla" id="73">I</div>
-            <div class="tecla" id="79">O</div>
-            <div class="tecla" id="80">P</div>
-            <div class="tecla" id="160">[</div>
-            <div class="tecla" id="221">]</div>
-            <div class="tecla barra" id="220">\</div>
-        </div>
-
-        <div class="linha x3">
-            <div class="tecla caps" id="20">CAPS</div>
-            <div class="tecla" id="65">A</div>
-            <div class="tecla" id="83">S</div>
-            <div class="tecla" id="68">D</div>
-            <div class="tecla" id="70">F</div>
-            <div class="tecla" id="71">G</div>
-            <div class="tecla" id="72">H</div>
-            <div class="tecla" id="74">J</div>
-            <div class="tecla" id="75">K</div>
-            <div class="tecla" id="76">L</div>
-            <div class="tecla" id="59">;:</div>
-            <div class="tecla" id="222">'"</div>
-            <div class="tecla enter" id="13">ENTER</div>
-        </div>
-
-        <div class="linha x4">
-            <div class="tecla shift" id="16">SHIFT</div>
-            <div class="tecla" id="90">Z</div>
-            <div class="tecla" id="88">X</div>
-            <div class="tecla" id="67">C</div>
-            <div class="tecla" id="86">V</div>
-            <div class="tecla" id="66">B</div>
-            <div class="tecla" id="78">N</div>
-            <div class="tecla" id="77">M</div>
-            <div class="tecla" id="108">,</div>
-            <div class="tecla" id="190">.</div>
-            <div class="tecla" id="191">/?</div>
-            <div class="tecla shift" id="16">SHIFT</div>
-        </div>
-
-        <div class="linha x5">
-            <div class="tecla ctrl" id="17">CTRL</div>
-            <div class="tecla alt" id="91"><img src="https://img.icons8.com/ios-filled/27/windows-10.png" /></div>
-            <div class="tecla alt" id="18">ALT</div>
-            <div class="tecla space" id="32">SPACE</div>
-            <div class="tecla alt" id="18">ALT</div>
-            <div class="tecla alt" id="">FN</div>
-            <div class="tecla alt" id="93"><span class="material-symbols-outlined"> reorder</span></div>
-            <div class="tecla ctrl" id="17">CTRL</div>
-        </div>
-
-    </div>
-
-    <p id="timer">2</p>
-    <p>Segundos</p>
 
     <script src="./index.js"></script>
 </body>
