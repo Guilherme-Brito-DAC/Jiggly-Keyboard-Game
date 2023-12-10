@@ -1,5 +1,7 @@
 # Jiggly-Keyboard-Game
 
+[Jogo](https://guilherme-brito-dac.github.io/Jiggly-Keyboard-Game/)
+
 O desafio era construir um teclado que atendesse aos seguintes requisitos:
 
 + Os usuários veem o teclado do computador centralizado na página
